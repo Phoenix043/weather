@@ -1,5 +1,5 @@
 asgiref==3.7.2
-coverage==7.3.0
+coverage==7.2.7
 Django==3.2.20
 django-cors-headers==4.2.0
 gunicorn==21.2.0
