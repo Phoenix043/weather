@@ -54,7 +54,8 @@ MIDDLEWARE = [
 # CSRF_COOKIE_NAME = 'csrftoken'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",  # Add the URL of your React frontend
+    "http://127.0.0.1:5500", 
+    "https://64dd0be8bf3355096a628dea--kaleidoscopic-pastelito-c0e2a6.netlify.app",# Add the URL of your React frontend
 ]
 
 #SESSION_COOKIE_SAMESITE = 'None'
