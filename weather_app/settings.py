@@ -53,10 +53,18 @@ MIDDLEWARE = [
 ]
 # CSRF_COOKIE_NAME = 'csrftoken'
 
-CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500", 
-    "https://64dd0be8bf3355096a628dea--kaleidoscopic-pastelito-c0e2a6.netlify.app",# Add the URL of your React frontend
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://127.0.0.1:5500", 
+#     "https://64dd0be8bf3355096a628dea--kaleidoscopic-pastelito-c0e2a6.netlify.app",# Add the URL of your React frontend
+# ]
+
+# Allow all origins for now (be cautious in production)
+CORS_ALLOW_ALL_ORIGINS = True
+
+# Additional CORS settings (customize as needed)
+CORS_ALLOW_METHODS = ['GET','POST','DELETE',"PUT",'OPTIONS']  # You can add more methods as necessary
+CORS_ALLOW_HEADERS = ['accept', 'origin', 'content-type', 'Authorization']
+
 
 #SESSION_COOKIE_SAMESITE = 'None'
 SESSION_COOKIE_SECURE = True
