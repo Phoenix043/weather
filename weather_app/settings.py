@@ -63,7 +63,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 # Additional CORS settings (customize as needed)
 CORS_ALLOW_METHODS = ['GET','POST','DELETE',"PUT",'OPTIONS']  # You can add more methods as necessary
-CORS_ALLOW_HEADERS = ['accept', 'origin', 'content-type', 'Authorization']
+CORS_ALLOW_HEADERS = ['accept', 'origin', 'content-type', 'Authorization','X-CSRFToken']
 
 
 #SESSION_COOKIE_SAMESITE = 'None'
